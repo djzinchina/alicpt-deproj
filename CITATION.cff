@@ -9,8 +9,9 @@ abstract: >-
 version: 1.0.0
 date-released: "2026-10-26"
 license: GPL-3.0-or-later
-repository-code: "<REPO_URL>"
-doi: "<DATA_DOI>"
+repository-code: "https://github.com/djzinchina/alicpt-deproj"
+# Uncomment once the dataset DOI is assigned:
+# doi: "10.xxxx/xxxxx"
 authors:
   - family-names: Dou
     given-names: Jiazheng

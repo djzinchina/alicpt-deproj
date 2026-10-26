@@ -1,15 +1,16 @@
 # AliCPT beam systematics & deprojection — example notebooks
 
 Example code for the dataset **“Simulated CMB dataset for beam systematics and
-deprojection studies in AliCPT-1”** (Dou & Li). This repository contains *code
-only*: it shows how to read the beam-mismatch parameters and the simulated maps
-from the data server, and how to reproduce the three Technical Validation
-figures of the data paper.
+deprojection studies in AliCPT-1”** (Dou & Li). This repository
+(<https://github.com/djzinchina/alicpt-deproj>) contains *code only*: it shows
+how to read the beam-mismatch parameters and the simulated maps from the data
+server, and how to reproduce the three Technical Validation figures of the data
+paper.
 
 > **No data are stored in this repository.** All FITS / NPY / PKL products live
 > on the IHEP/CAS AliCPT data server and are read from there; see [Data](#data).
 
-<!-- TODO(owner): replace <REPO_URL> and <DATA_DOI> before publishing. -->
+<!-- TODO(owner): replace <DATA_DOI> once the dataset DOI is assigned. -->
 
 ## Contents
 

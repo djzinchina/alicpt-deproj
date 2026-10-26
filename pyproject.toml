@@ -18,7 +18,7 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "<REPO_URL>"
+Repository = "https://github.com/djzinchina/alicpt-deproj"
 
 [tool.setuptools]
 py-modules = ["deproj_utils"]
