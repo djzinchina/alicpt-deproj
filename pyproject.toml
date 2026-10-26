@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alicpt-deproj"
+version = "1.0.0"
+description = "Example notebooks for the AliCPT beam-systematics and deprojection dataset"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "GPL-3.0-or-later" }
+authors = [{ name = "Jiazheng Dou", email = "doujzh@ihep.ac.cn" }]
+dependencies = [
+    "numpy>=1.20",
+    "healpy>=1.16",
+    "pymaster>=2.0",
+    "matplotlib>=3.5",
+]
+
+[project.urls]
+Repository = "<REPO_URL>"
+
+[tool.setuptools]
+py-modules = ["deproj_utils"]

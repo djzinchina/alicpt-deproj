@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use the dataset or these examples, please cite the data paper."
+title: "AliCPT beam systematics and deprojection - example notebooks"
+abstract: >-
+  Example notebooks that read the beam-mismatch parameters and the simulated
+  maps of the AliCPT beam-systematics and deprojection dataset and reproduce
+  its three Technical Validation figures. The dataset itself is hosted on the
+  IHEP/CAS AliCPT data server and is not part of this repository.
+version: 1.0.0
+date-released: "2026-10-26"
+license: GPL-3.0-or-later
+repository-code: "<REPO_URL>"
+doi: "<DATA_DOI>"
+authors:
+  - family-names: Dou
+    given-names: Jiazheng
+    email: doujzh@ihep.ac.cn
+    orcid: "https://orcid.org/0000-0001-8024-3931"
