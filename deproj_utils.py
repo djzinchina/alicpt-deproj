@@ -1,12 +1,6 @@
 """Small helpers used by the example notebooks of the AliCPT beam-systematics
 and deprojection dataset.
 
-A few of these routines were originally part of the ``cmbframe`` package
-(https://github.com/1cosmologist/CMBframe, GPL-3.0).  They are reproduced here
-in a trimmed, self-contained form so that the examples do not require the full
-framework.  Only the functionality needed to reproduce the figures of the
-companion data paper is kept.
-
 This module is released under the GNU General Public License v3.0; see LICENSE.
 """
 import numpy as np
@@ -40,6 +34,15 @@ FOREGROUND = _planck_cmap(
                0, 127.5, 178.5, 204, 229.5, 242.25, 252.45],
               [255, 255, 255, 255, 250, 245, 212, 212, 175, 130, 38.25, 12.75, 0,
                32, 32, 153, 204, 229.5, 242.25, 249.9, 255]]), 'foreground')
+
+# healpy applies its ``bgcolor``/``badcolor`` arguments only when the colormap
+# is passed *by name*; for a Colormap object it keeps the object's own
+# "under"/"bad" colours.  Set them explicitly, otherwise the area outside the
+# projection (and hp.UNSEEN) is painted with the lowest colour, i.e. blue.
+GAUSSIAN.set_under('white')
+GAUSSIAN.set_bad('white')
+FOREGROUND.set_under('white')
+FOREGROUND.set_bad('white')
 
 
 # -------------------------------------------------------------------- plots --

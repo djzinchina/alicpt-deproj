@@ -7,8 +7,8 @@ how to read the beam-mismatch parameters and the simulated maps from the data
 server, and how to reproduce the three Technical Validation figures of the data
 paper.
 
-> **No data are stored in this repository.** All FITS / NPY / PKL products live
-> on the IHEP/CAS AliCPT data server and are read from there; see [Data](#data).
+> **No data are stored in this repository.** All FITS / TXT / PKL products live
+> on the IHEP data server and are read from there; see [Data](#data).
 
 <!-- TODO(owner): replace <DATA_DOI> once the dataset DOI is assigned. -->
 
@@ -27,8 +27,7 @@ paper.
 
 ## Data
 
-The dataset is hosted on the AliCPT shared filesystem at IHEP/CAS (DOI:
-`<DATA_DOI>`); see the data paper for access details. The examples read the
+The dataset is hosted on the AliCPT shared filesystem at IHEP; see the data paper for access details. The examples read the
 data through the `DEPROJ_DATA_ROOT` environment variable and never write back:
 
 ```bash
@@ -151,14 +150,9 @@ If you use the dataset or this code, please cite the data paper
 }
 ```
 
-and, if the spherical-harmonic helpers are useful to you, the cmbframe package
-(Ghosh et al.).
-
 ## License
 
-GNU General Public License v3.0 or later — see [LICENSE](LICENSE). The license
-is GPL-3.0 because `deproj_utils.py` is derived from the GPL-3.0 licensed
-cmbframe package.
+GNU General Public License v3.0 or later — see [LICENSE](LICENSE).
 
 ## Contact
 
